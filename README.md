@@ -1,8 +1,10 @@
-# React + Vite
+This is a Dictionary App based on React JS , this dictionary will tell:-
+1) Word meaning
+2) Which part of speech it is
+3) Example sentences for all the different meanings.
+4) Synnonyms
+5) Antonyms
+![image](https://github.com/user-attachments/assets/068ed548-0f40-42b1-999d-fd995484fc28)
+![image](https://github.com/user-attachments/assets/d8d2815d-6216-4db5-ac67-28cdc409ff50)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
