@@ -5,6 +5,7 @@ This is a Dictionary App based on React JS , this dictionary will tell:-
 4) Synnonyms
 5) Antonyms
 ![image](https://github.com/user-attachments/assets/068ed548-0f40-42b1-999d-fd995484fc28)
+<br><hr>
 ![image](https://github.com/user-attachments/assets/d8d2815d-6216-4db5-ac67-28cdc409ff50)
 
 
