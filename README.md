@@ -1,4 +1,4 @@
-#Dictionary [[Link]](https://satyamr196.github.io/Dictionary/)
+# Dictionary [[Link]](https://satyamr196.github.io/Dictionary/)
 This is a Dictionary App based on React JS , this dictionary will tell:-
 1) Word meaning
 2) Which part of speech it is
