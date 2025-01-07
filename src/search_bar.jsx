@@ -1,22 +1,22 @@
 import "./pico.conditional.amber.min.css";
 import "./search_bar.css";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Display from "./Display";
 
-export default function Search_bar(){
-    let [word,setWord] = useState("");
-    let [jsonData,setJsonData] = useState([]);
-    let [isRunning,setIsRunning] = useState(false);
+export default function Search_bar() {
+    let [word, setWord] = useState("");
+    let [jsonData, setJsonData] = useState([]);
+    let [isRunning, setIsRunning] = useState(false);
 
-    function handleInput(event){
+    function handleInput(event) {
         setWord(event.target.value);
         console.log(event.target.value);
     }
 
-    async function handleSubmit(event){
+    async function handleSubmit(event) {
         setIsRunning(true);
         event.preventDefault();
-        let URL=`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+        let URL = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
         let data = await fetch(URL);
         let newData = await data.json();
         setJsonData(newData);
@@ -37,8 +37,8 @@ export default function Search_bar(){
                 <input type="search" name="word" onChange={handleInput} value={word} />
                 <button type="submit">Search</button>
             </form>
-
-            {jsonData.length ? <Display wordData={jsonData} running={isRunning}/> : (<p><i>No data available</i></p>)}
+            {isRunning ? <progress /> : null}
+            {jsonData.length ? <Display wordData={jsonData} /> : (<p><i>No data available</i></p>)}
         </div>
     )
 }

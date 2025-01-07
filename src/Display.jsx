@@ -1,8 +1,7 @@
 
-export default function Display({wordData,running}){
+export default function Display({wordData}){
     return(
         <>  
-            {running ? <progress /> : null}
             <h3><u>Parts of Speech</u> : {wordData[0].meanings[0].partOfSpeech}</h3>
             <hr />
             <h3><u>Synonyms</u> : {wordData[0].meanings[0].synonyms.map((ele)=>(<span>{ele}, </span>))}</h3>
